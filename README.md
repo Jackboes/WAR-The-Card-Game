@@ -2,6 +2,7 @@
 
 This is actually my 1st mini project, **War: The Card Game**, a Python based game 🐍.  
 The project focuses on applying Object-Oriented Programming (OOP) concepts along with a basic Graphical User Interface (GUI).
+Simply make 2 files in VS code and save them using a .py file as the extension and then just hit run and play the game.
 
 ---
 
