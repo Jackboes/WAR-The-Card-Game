@@ -62,29 +62,28 @@ right_sword.image = swordcr
 # Here left_sword is an object in which the sword is store 
 # To access the stored sword or to display it we used the '.' do access whats in that left_sword
 
-# Player 1 & Player 2 names
+# Player 1 & Player 2 names - RESPONSIVE POSITIONING
 
 player_one_label = Label(window,text="Arinjay",fg="#1E140A",bg="#EEEBE6",font=("Times New Roman",18,"bold"))
-player_one_label.place(x=50,y=200)
+player_one_label.place(relx=0.2, rely=0.42, anchor="center")
 
 player_two_label = Label(window,text="Vedant",fg="#1E140A",bg="#EEEBE6",font=("Times New Roman",18,"bold"))
-player_two_label.place(x=650,y=200)
+player_two_label.place(relx=0.8, rely=0.42, anchor="center")
 
 # Player 1 count show
-
 player_one_count = Label(window,text="Cards: 26",fg="#1E140A",bg="#EEEBE6",font=("Times New Roman",12,"bold"))
-player_one_count.place(x=50, y=150)
+player_one_count.place(relx=0.2, rely=0.2, anchor="center")
 
-# Rount count text
+# Round count text
 round_num_label = Label(window,text="Round: ",fg="#1E140A",bg="#EEEBE6",font=("Times New Roman",18,"bold"))
-round_num_label.place(relx=0.5, y=150, anchor="center")
+round_num_label.place(relx=0.5, rely=0.2, anchor="center")
 
 # Player 2 count show
-player_two_count = Label(window,text="Cards: 26",fg="#1E140A",bg="#EEEBE6",font=("Times New Roman",13))
-player_two_count.place(x=650, y=150)
+player_two_count = Label(window,text="Cards: 26",fg="#1E140A",bg="#EEEBE6",font=("Times New Roman",12,"bold"))
+player_two_count.place(relx=0.8, rely=0.2, anchor="center")
 
 result_label = Label(window, text="", fg="#1E140A", bg="#EEEBE6",font=("Times New Roman",16,"bold"))
-result_label.place(relx=0.5, y=420, anchor="center")
+result_label.place(relx=0.5, rely=0.75, anchor="center")
 
 def update_count():
     
@@ -92,10 +91,10 @@ def update_count():
     player_two_count.config(text = f"Cards: {len(player_two.deck)}")
 
 player_one_card = Label(window,bg="#EEEBE6")
-player_one_card.place(x=50,y=250)
+player_one_card.place(relx=0.2, rely=0.55, anchor="center")
 
 player_two_card = Label(window,bg="#EEEBE6")
-player_two_card.place(x=650,y=250)
+player_two_card.place(relx=0.8, rely=0.55, anchor="center")
 
 
 rank_map = {
@@ -266,9 +265,7 @@ button2 = Button(window,
                  image = p2)
 
 
-button.place(relx = 0.15, rely = 0.88,anchor = "center")
+button.place(relx = 0.15, rely = 0.88, anchor = "center")
 button2.place(relx = 0.85, rely = 0.88, anchor = "center")
 
 window.mainloop()
-
-
